@@ -16,7 +16,18 @@ As for 95% of code interviews there is a typical basic syntax used, I decided to
 
 #### Go
 
+https://pkg.go.dev/strings
+
 ""[num]
+
+### Contains
+
+#### Go
+
+```
+strings.contains(w1, w2)
+```
+
 
 ## Loop
 
