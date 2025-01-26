@@ -28,6 +28,14 @@ https://pkg.go.dev/strings
 strings.contains(w1, w2)
 ```
 
+### Starts / Ends with
+
+#### Go
+
+```
+strings.HasPrefix(str, "pref")
+strings.HasSuffix(str, "suf")
+```
 
 ## Loop
 
@@ -37,15 +45,33 @@ strings.contains(w1, w2)
 
 ```
 for i := 0; i < 10; i++ {
-		sum += i
-	}
+   sum += i
+}
 ```
 
 ### While-loop
 
+### Go
 
+```
+
+```
 
 ## Data structures
+
+### Array
+
+#### Go
+
+```
+// fixed size
+m := len(words)
+prefixsum := make([]int, m)
+
+// dynamic
+var pref_sum []int
+pref_sum = append(pref_sum, 1)
+```
 
 ### Map
 
