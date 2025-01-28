@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/two-sum/description/
+
 func twoSum(nums []int, target int) []int {
     //res := twoSumNestedLoop(nums, target)
     res := twoSumHashMap(nums, target)
