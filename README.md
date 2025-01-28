@@ -49,6 +49,17 @@ for i := 0; i < 10; i++ {
 }
 ```
 
+### Foreach-loop
+
+#### Go
+
+```
+for index, element := range someSlice {
+    // index is the index where we are
+    // element is the element from someSlice for where we are
+}
+```
+
 ### While-loop
 
 ### Go
@@ -85,4 +96,10 @@ Example
 m := make(map[string]int)
 m["k1"] = 7
 m["k2"] = 13
+
+val, ok := m["foo"]
+// If the key exists
+if ok {
+    // Do something
+}
 ```
