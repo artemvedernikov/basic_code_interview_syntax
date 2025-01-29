@@ -82,6 +82,10 @@ prefixsum := make([]int, m)
 // dynamic
 var pref_sum []int
 pref_sum = append(pref_sum, 1)
+
+// sort
+ints := []int{7, 2, 4}
+slices.Sort(ints)
 ```
 
 ### Map
