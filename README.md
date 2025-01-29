@@ -65,7 +65,9 @@ for index, element := range someSlice {
 ### Go
 
 ```
-
+for sum < 1000 {
+		sum += sum
+}
 ```
 
 ## Data structures
