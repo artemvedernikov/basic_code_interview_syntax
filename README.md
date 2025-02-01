@@ -76,6 +76,8 @@ for sum < 1000 {
 
 #### Go
 
+https://go.dev/blog/slices-intro
+
 ```
 // fixed size
 m := len(words)
@@ -88,26 +90,9 @@ pref_sum = append(pref_sum, 1)
 // sort
 ints := []int{7, 2, 4}
 slices.Sort(ints)
-```
 
-### Map
-
-#### Go
-
-make(map[key-type]val-type)
-
-Example
-
-```
-m := make(map[string]int)
-m["k1"] = 7
-m["k2"] = 13
-
-val, ok := m["foo"]
-// If the key exists
-if ok {
-    // Do something
-}
+// concat
+append([]int{1,2}, []int{3,4}...)
 ```
 
 ### Queue
@@ -131,3 +116,40 @@ if len(queue) == 0 {
     fmt.Println("Queue is empty !")
 }
 ```
+
+### Stack
+
+#### Go
+
+There is no build in Stack so use slice
+
+https://dev.to/jpoly1219/stacks-in-go-54k
+
+```
+stack := []*TreeNode{}
+// append
+stack = append(stack, root)
+// remove
+stack = stack[:len(stack) - 1]
+```
+
+### Map
+
+#### Go
+
+make(map[key-type]val-type)
+
+Example
+
+```
+m := make(map[string]int)
+m["k1"] = 7
+m["k2"] = 13
+
+val, ok := m["foo"]
+// If the key exists
+if ok {
+    // Do something
+}
+```
+
