@@ -153,3 +153,55 @@ if ok {
 }
 ```
 
+## OOP
+
+### Go
+
+https://medium.com/@canoguz/object-oriented-programming-in-go-e50f8fe4a620
+
+https://yourbasic.org/golang/structs-explained/
+
+```
+type Customer struct {
+	Name string
+	Age  int
+}
+
+func (c *Customer) NewCustomer(name string, age int) {
+	c.Name = name
+	c.Age = age
+}
+
+func main() {
+	customer := new(Customer)
+	customer.NewCustomer("John", 30)
+	fmt.Printf("%s: %d\n", customer.Name, customer.Age)
+}
+
+////
+
+type Student struct {
+	Name string
+	Age  int
+}
+
+var a Student    // a == Student{"", 0}
+a.Name = "Alice" // a == Student{"Alice", 0}
+
+var pa *Student   // pa == nil
+pa = new(Student) // pa == &Student{"", 0}
+pa.Name = "Alice" // pa == &Student{"Alice", 0}
+
+b := Student{ // b == Student{"Bob", 0}
+	Name: "Bob",
+}
+    
+pb := &Student{ // pb == &Student{"Bob", 8}
+	Name: "Bob",
+	Age:  8,
+}
+
+c := Student{"Cecilia", 5} // c == Student{"Cecilia", 5}
+d := Student{}             // d == Student{"", 0}
+```
+
