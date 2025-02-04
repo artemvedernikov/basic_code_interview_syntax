@@ -2,6 +2,17 @@
 
 As for 95% of code interviews there is a typical basic syntax used, I decided to store it in one place
 
+## Ints
+
+### Min / Max
+
+#### Go
+
+```
+math.MinInt32
+math.MaxInt32
+```
+
 ## String
 
 ### Index at
@@ -90,6 +101,8 @@ pref_sum = append(pref_sum, 1)
 // sort
 ints := []int{7, 2, 4}
 slices.Sort(ints)
+
+sort.Sort(sort.Reverse(sort.IntSlice(keys)))
 
 // concat
 append([]int{1,2}, []int{3,4}...)
