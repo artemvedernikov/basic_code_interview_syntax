@@ -11,7 +11,9 @@ As for 95% of code interviews there is a typical basic syntax used, I decided to
 ```
 math.MinInt32
 math.MaxInt32
-math.Pow(3, 5)
+
+math.Pow(3, 5) // float64
+int(math.Pow(10, float64(i))) // int example
 ```
 
 ## String
@@ -219,3 +221,12 @@ c := Student{"Cecilia", 5} // c == Student{"Cecilia", 5}
 d := Student{}             // d == Student{"", 0}
 ```
 
+
+## Misc
+
+### Go
+
+```
+import "reflect"
+reflect.TypeOf(x)
+```
