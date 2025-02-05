@@ -4,13 +4,14 @@ As for 95% of code interviews there is a typical basic syntax used, I decided to
 
 ## Ints
 
-### Min / Max
+### Math
 
 #### Go
 
 ```
 math.MinInt32
 math.MaxInt32
+math.Pow(3, 5)
 ```
 
 ## String
