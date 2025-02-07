@@ -167,6 +167,9 @@ val, ok := m["foo"]
 if ok {
     // Do something
 }
+
+delete(m, "test")
+len(m)
 ```
 
 ## OOP
