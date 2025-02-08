@@ -170,6 +170,11 @@ if ok {
 
 delete(m, "test")
 len(m)
+
+//iterate
+for k, v := range m { 
+    fmt.Printf("key[%s] value[%s]\n", k, v)
+}
 ```
 
 ## OOP
