@@ -32,23 +32,21 @@ int(math.Pow(10, float64(i))) // int example
 
 https://pkg.go.dev/strings
 
+```
+
 ""[num]
 
-### Contains
-
-#### Go
-
-```
 strings.contains(w1, w2)
-```
 
-### Starts / Ends with
-
-#### Go
-
-```
 strings.HasPrefix(str, "pref")
 strings.HasSuffix(str, "suf")
+
+// https://stackoverflow.com/questions/1760757/how-to-efficiently-concatenate-strings-in-go
+var b strings.Builder
+b.WriteByte('b')
+b.WriteString("abc")
+
+b.String()
 ```
 
 ## Loop
@@ -109,6 +107,9 @@ sort.Sort(sort.Reverse(sort.IntSlice(keys)))
 
 // concat
 append([]int{1,2}, []int{3,4}...)
+
+// reverse
+slices.Reverse(slice))
 ```
 
 ### Queue
