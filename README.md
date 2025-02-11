@@ -12,6 +12,9 @@ As for 95% of code interviews there is a typical basic syntax used, I decided to
 math.MinInt32
 math.MaxInt32
 
+math.Max(x, y)
+math.Min(x, y)
+
 math.Pow(3, 5) // float64
 int(math.Pow(10, float64(i))) // int example
 ```
