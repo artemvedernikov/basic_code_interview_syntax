@@ -36,9 +36,11 @@ int(math.Pow(10, float64(i))) // int example
 https://pkg.go.dev/strings
 
 ```
-
+// char (byte) at position
 ""[num]
 
+// index of 
+strings.Index("asdas@fdass@da", "x")
 strings.contains(w1, w2)
 
 strings.HasPrefix(str, "pref")
