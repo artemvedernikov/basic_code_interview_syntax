@@ -47,6 +47,11 @@ b.WriteByte('b')
 b.WriteString("abc")
 
 b.String()
+
+// string from slice
+builder := make([]byte, 0)
+builder = append(builder, c)
+string(builder)
 ```
 
 ## Loop
