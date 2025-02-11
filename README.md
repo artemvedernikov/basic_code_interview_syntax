@@ -184,6 +184,21 @@ len(m)
 for k, v := range m { 
     fmt.Printf("key[%s] value[%s]\n", k, v)
 }
+
+// default values
+m1 := make(map[int]int)
+x1, hasX1 := m1[1]
+fmt.Println(x1)
+fmt.Println(hasX1)
+m1[1] += 1
+fmt.Println(m1[1])
+
+m := make(map[int][]int)
+x, hasX := m[1]
+fmt.Println(x)
+fmt.Println(hasX)
+m[1] = append(x, 1)
+fmt.Println(m[1])
 ```
 
 ## OOP
